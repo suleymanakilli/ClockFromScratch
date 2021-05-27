@@ -1,0 +1,43 @@
+body{
+    background-image: url("assets/clock-background.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+.clock{
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 15px solid white;
+    margin:15% auto;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    color: white;
+    font-weight: bolder;
+}
+
+.clock svg{
+    position: absolute;
+    top:-45px;
+    right: 0;
+    left: 148px;
+    bottom: 0;
+    width: 4px;
+    height: 200px;
+    transform-origin: bottom;
+}
+.clock .second{
+    transform: rotate(0deg);
+}
+.clock .minute{
+    transform: rotate(0deg);
+}
+.clock .hour{
+    transform: rotate(180deg);
+}
